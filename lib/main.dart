@@ -31,9 +31,32 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
+          fontFamily: 'Poppins',
+          primaryColor: Colors.white,
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(
+            elevation: 0,
+            foregroundColor: Colors.white,
+          ),
+          hintColor: Colors.redAccent,
+          //  accentColor: Colors.redAccent,
+          textTheme: const TextTheme(
+            headlineLarge: TextStyle(fontSize: 22.0, color: Colors.redAccent),
+            headlineMedium: TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.w700,
+              color: Colors.redAccent,
+            ),
+            bodyLarge: TextStyle(
+              fontSize: 14.0,
+              fontWeight: FontWeight.w400,
+              color: Colors.blueAccent,
+            ),
+          ),
         ),
+        //  ThemeData(
+        //     colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        //     useMaterial3: true,
+        //   ),
         home: const Home(),
       ),
     );

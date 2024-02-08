@@ -1,3 +1,4 @@
 {
-    "editor.guides.indentation": false
+  "editor.guides.indentation": true,
+  "markdown.extension.tableFormatter.normalizeIndentation": false
 }
